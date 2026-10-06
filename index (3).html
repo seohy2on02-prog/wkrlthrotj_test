@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>강서현 | About</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  /* 사용 색상 2가지 */
+  :root { --ink: #1F2A44; --paper: #F5F1E8; }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: "Noto Sans KR", sans-serif;
+    line-height: 1.7; word-break: keep-all;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+
+  /* Hero */
+  .hero { padding: 96px 0 64px; border-bottom: 2px solid var(--ink); }
+  .label { font-size: 13px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
+  .hero h1 { font-size: clamp(40px, 8vw, 72px); font-weight: 900; line-height: 1.15; margin: 16px 0 24px; }
+  .hero p.lead { font-size: clamp(18px, 2.6vw, 22px); font-weight: 500; max-width: 640px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 32px; }
+  .tag { border: 1.5px solid var(--ink); border-radius: 999px; padding: 4px 14px; font-size: 14px; font-weight: 500; }
+
+  /* Section */
+  section { padding: 64px 0; border-bottom: 1px solid var(--ink); }
+  section:last-of-type { border-bottom: none; }
+  .sec-head { display: flex; align-items: baseline; gap: 16px; margin-bottom: 32px; }
+  .sec-head .num { font-size: 14px; font-weight: 700; }
+  .sec-head h2 { font-size: 28px; font-weight: 900; }
+
+  /* 경력 강점 카드 */
+  .career-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-bottom: 24px; }
+  .career-top strong { font-size: 22px; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .card { border: 1.5px solid var(--ink); padding: 24px; }
+  .card .k { font-size: 13px; font-weight: 700; letter-spacing: .1em; }
+  .card h3 { font-size: 19px; font-weight: 700; margin: 8px 0 12px; line-height: 1.4; }
+  .card p { font-size: 15px; }
+  .card.invert { background: var(--ink); color: var(--paper); }
+
+  /* 정보 표 */
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+  .rows { list-style: none; }
+  .rows li { display: grid; grid-template-columns: 110px 1fr; padding: 14px 0; border-top: 1px solid var(--ink); }
+  .rows li:last-child { border-bottom: 1px solid var(--ink); }
+  .rows .t { font-weight: 700; font-size: 14px; }
+  h4 { font-size: 16px; font-weight: 700; margin-bottom: 12px; }
+
+  /* 지원 동기 */
+  .quote { background: var(--ink); color: var(--paper); padding: 40px; }
+  .quote p { font-size: clamp(18px, 2.4vw, 22px); font-weight: 500; }
+  .interest { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+
+  footer { padding: 32px 0 48px; font-size: 13px; }
+
+  @media (max-width: 720px) {
+    .hero { padding: 64px 0 48px; }
+    section { padding: 48px 0; }
+    .cards, .grid2, .interest { grid-template-columns: 1fr; }
+    .grid2 { gap: 32px; }
+    .quote { padding: 28px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="label">About Me</span>
+    <h1>강서현</h1>
+    <p class="lead">3년간 매장에서 고객의 마음을 읽어 온 경험으로,<br>이제는 팬의 마음을 읽는 사람이 되려 합니다.</p>
+    <div class="tags">
+      <span class="tag">올리브영 3년</span>
+      <span class="tag">매출 상위권 유지</span>
+      <span class="tag">메이크업·네일 국가자격</span>
+      <span class="tag">K-pop 이머시브 1기</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- 01 경력 -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head"><span class="num">01</span><h2>경력과 강점</h2></div>
+      <div class="career-top">
+        <strong>CJ올리브영 매장 근무</strong>
+        <span>약 3년 · 여러 상권 매장 경험</span>
+      </div>
+      <div class="cards">
+        <article class="card invert">
+          <span class="k">SALES</span>
+          <h3>책임감과 승부욕으로<br>매출 상위권 유지</h3>
+          <p>제품 판매와 함께 매장 전반의 컨디션을 관리하며, 맡은 일에 끝까지 책임지는 태도로 꾸준히 상위권 성과를 냈습니다.</p>
+        </article>
+        <article class="card">
+          <span class="k">FLEXIBILITY</span>
+          <h3>예상 밖의 상황에도<br>유연한 응대</h3>
+          <p>상권이 다른 여러 매장에서 다양한 강성 고객을 응대하며, 매뉴얼에 없는 변수도 침착하게 풀어내는 힘을 길렀습니다.</p>
+        </article>
+        <article class="card">
+          <span class="k">INSIGHT</span>
+          <h3>니즈와 트렌드를<br>빠르게 읽는 소통</h3>
+          <p>고객의 필요와 트렌드를 빠르게 파악해 제안하고, 고객이 느끼는 심리적 문턱을 낮추는 대화를 해 왔습니다.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 전공·자격 -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head"><span class="num">02</span><h2>전공 · 자격 · 수상</h2></div>
+      <div class="grid2">
+        <div>
+          <h4>전공</h4>
+          <ul class="rows">
+            <li><span class="t">주전공</span><span>화장품</span></li>
+            <li><span class="t">부전공</span><span>미용</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4>자격증</h4>
+          <ul class="rows">
+            <li><span class="t">국가자격</span><span>메이크업, 네일</span></li>
+            <li><span class="t">민간자격</span><span>조향사 3급</span></li>
+          </ul>
+        </div>
+      </div>
+      <div style="margin-top:40px">
+        <h4>수상</h4>
+        <ul class="rows">
+          <li><span class="t">메이크업 대회</span><span>국회의원상 · 대상 · 금상 등 다수 수상</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 새로운 도전 -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head"><span class="num">03</span><h2>새로운 도전</h2></div>
+      <div class="quote">
+        <p>올리브영 퇴사 후, 한 분야에 머무르지 않고 더 넓은 경험을 쌓기 위해 <strong>K-pop 이머시브 1기</strong>에 지원했습니다. 뷰티 현장에서 익힌 고객 이해를 엔터테인먼트로 확장하고자 합니다.</p>
+      </div>
+      <div class="interest">
+        <article class="card">
+          <span class="k">INTEREST 01</span>
+          <h3>팬 마케팅</h3>
+          <p>고객의 니즈를 읽고 문턱을 낮추던 경험을 팬과의 접점 설계로 잇고 싶습니다.</p>
+        </article>
+        <article class="card">
+          <span class="k">INTEREST 02</span>
+          <h3>아티스트 콘텐츠</h3>
+          <p>뷰티·트렌드 감각을 바탕으로 아티스트의 매력을 살리는 콘텐츠를 기획하고 싶습니다.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">MBTI · ISTP / ISTJ</div>
+</footer>
+
+</body>
+</html>
